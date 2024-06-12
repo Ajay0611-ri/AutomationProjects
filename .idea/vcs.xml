@@ -2,7 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/UI-E2E-Testing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/UI-E2E-Testing/UI-E2E-Testing" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/WebTesting" vcs="Git" />
   </component>
 </project>
