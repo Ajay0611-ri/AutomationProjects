@@ -1,0 +1,5 @@
+com\example\ApplicationConfig.class
+com\example\testclasses\UserClass.class
+com\example\testclasses\Authentication.class
+com\example\testclasses\BaseClass.class
+com\example\testclasses\GetApi.class

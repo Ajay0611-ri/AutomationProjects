@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="32" passed="27" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-05T19:12:14 IST" name="Surefire suite" finished-at="2024-03-05T19:13:08 IST" duration-ms="54248">
+    <groups>
+    </groups>
+    <test started-at="2024-03-05T19:12:14 IST" name="Surefire test" finished-at="2024-03-05T19:13:08 IST" duration-ms="54248">
+      <class name="com.example.testclasses.UserClass">
+        <test-method is-config="true" signature="testUserLogin()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:14 IST" name="testUserLogin" finished-at="2024-03-05T19:12:18 IST" duration-ms="4365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserLogin -->
+        <test-method signature="testUserLogin()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:18 IST" name="testUserLogin" finished-at="2024-03-05T19:12:20 IST" duration-ms="1233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserLogin -->
+        <test-method signature="deleteUserByIdWithInvalidId()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:20 IST" name="deleteUserByIdWithInvalidId" finished-at="2024-03-05T19:12:21 IST" duration-ms="844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserByIdWithInvalidId -->
+        <test-method signature="deleteUserByIdWithInvalidIdAndToken()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:21 IST" name="deleteUserByIdWithInvalidIdAndToken" finished-at="2024-03-05T19:12:21 IST" duration-ms="846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserByIdWithInvalidIdAndToken -->
+        <test-method signature="deleteUserByIdWithInvalidToken()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:21 IST" name="deleteUserByIdWithInvalidToken" finished-at="2024-03-05T19:12:25 IST" duration-ms="3091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserByIdWithInvalidToken -->
+        <test-method signature="deleteUserByIdWithValidDetails()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:25 IST" name="deleteUserByIdWithValidDetails" finished-at="2024-03-05T19:12:28 IST" duration-ms="2998" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Status code not 200
+Expected: <200>
+     but: was <404>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Status code not 200
+Expected: <200>
+     but: was <404>
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at com.example.testclasses.UserClass.deleteUserByIdWithValidDetails(UserClass.java:546)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserByIdWithValidDetails -->
+        <test-method signature="getAllUsers()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:28 IST" name="getAllUsers" finished-at="2024-03-05T19:12:29 IST" duration-ms="1227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers -->
+        <test-method signature="getAllUsersWithInvalidToken()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:29 IST" name="getAllUsersWithInvalidToken" finished-at="2024-03-05T19:12:30 IST" duration-ms="824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsersWithInvalidToken -->
+        <test-method signature="getCatchesByInvalidId()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:30 IST" name="getCatchesByInvalidId" finished-at="2024-03-05T19:12:30 IST" duration-ms="836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCatchesByInvalidId -->
+        <test-method signature="getCatchesByInvalidToken()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:30 IST" name="getCatchesByInvalidToken" finished-at="2024-03-05T19:12:31 IST" duration-ms="830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCatchesByInvalidToken -->
+        <test-method signature="getCatchesByInvalidTokenAndInvalidId()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:31 IST" name="getCatchesByInvalidTokenAndInvalidId" finished-at="2024-03-05T19:12:32 IST" duration-ms="840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCatchesByInvalidTokenAndInvalidId -->
+        <test-method signature="getCatchesByUserId()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:32 IST" name="getCatchesByUserId" finished-at="2024-03-05T19:12:33 IST" duration-ms="897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCatchesByUserId -->
+        <test-method signature="getFriendsByInvalidId()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:33 IST" name="getFriendsByInvalidId" finished-at="2024-03-05T19:12:34 IST" duration-ms="844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFriendsByInvalidId -->
+        <test-method signature="getFriendsByInvalidToken()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:34 IST" name="getFriendsByInvalidToken" finished-at="2024-03-05T19:12:35 IST" duration-ms="818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFriendsByInvalidToken -->
+        <test-method signature="getFriendsByInvalidTokenAndInvalidId()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:35 IST" name="getFriendsByInvalidTokenAndInvalidId" finished-at="2024-03-05T19:12:36 IST" duration-ms="802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFriendsByInvalidTokenAndInvalidId -->
+        <test-method signature="getFriendsByUserId()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:36 IST" name="getFriendsByUserId" finished-at="2024-03-05T19:12:36 IST" duration-ms="865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFriendsByUserId -->
+        <test-method signature="getReferenceObjById()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:36 IST" name="getReferenceObjById" finished-at="2024-03-05T19:12:41 IST" duration-ms="4912" status="FAIL">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["data"] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["data"] not found.
+at org.json.JSONObject.get(JSONObject.java:595)
+at org.json.JSONObject.getJSONObject(JSONObject.java:805)
+at com.example.testclasses.UserClass.getReferenceObjById(UserClass.java:622)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getReferenceObjById -->
+        <test-method signature="getReferenceObjByInvalidId()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:41 IST" name="getReferenceObjByInvalidId" finished-at="2024-03-05T19:12:42 IST" duration-ms="857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getReferenceObjByInvalidId -->
+        <test-method signature="getReferenceObjByInvalidToken()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:42 IST" name="getReferenceObjByInvalidToken" finished-at="2024-03-05T19:12:47 IST" duration-ms="4667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getReferenceObjByInvalidToken -->
+        <test-method signature="getReferenceObjByInvalidTokenAndId()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:47 IST" name="getReferenceObjByInvalidTokenAndId" finished-at="2024-03-05T19:12:48 IST" duration-ms="790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getReferenceObjByInvalidTokenAndId -->
+        <test-method signature="getUserById()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:48 IST" name="getUserById" finished-at="2024-03-05T19:12:49 IST" duration-ms="1001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserById -->
+        <test-method signature="getUserByInvalidId()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:49 IST" name="getUserByInvalidId" finished-at="2024-03-05T19:12:49 IST" duration-ms="806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserByInvalidId -->
+        <test-method signature="getUserByInvalidToken()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:50 IST" name="getUserByInvalidToken" finished-at="2024-03-05T19:12:50 IST" duration-ms="833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserByInvalidToken -->
+        <test-method signature="getUserByInvalidTokenAndInvalidId()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:50 IST" name="getUserByInvalidTokenAndInvalidId" finished-at="2024-03-05T19:12:51 IST" duration-ms="784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserByInvalidTokenAndInvalidId -->
+        <test-method signature="updateUserByUserId()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:51 IST" name="updateUserByUserId" finished-at="2024-03-05T19:12:53 IST" duration-ms="1826" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[
+Expected: "TestUser.exactink@gmail.com"
+     but: was "testuser.exactink@gmail.com"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+Expected: "TestUser.exactink@gmail.com"
+     but: was "testuser.exactink@gmail.com"
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+at com.example.testclasses.UserClass.updateUserByUserId(UserClass.java:275)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserByUserId -->
+        <test-method signature="updateUserByUserIdWithInvalidEmail()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:53 IST" name="updateUserByUserIdWithInvalidEmail" finished-at="2024-03-05T19:12:55 IST" duration-ms="1929" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[
+Expected: "TestUser.exactink@Example.com"
+     but: was "testuser.exactink@example.com"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+Expected: "TestUser.exactink@Example.com"
+     but: was "testuser.exactink@example.com"
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+at com.example.testclasses.UserClass.updateUserByUserIdWithInvalidEmail(UserClass.java:339)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserByUserIdWithInvalidEmail -->
+        <test-method signature="updateUserByUserIdWithInvalidToken()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:55 IST" name="updateUserByUserIdWithInvalidToken" finished-at="2024-03-05T19:12:56 IST" duration-ms="774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserByUserIdWithInvalidToken -->
+        <test-method signature="updateUserByUserIdWithInvalidTokenAndInvalidId()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:56 IST" name="updateUserByUserIdWithInvalidTokenAndInvalidId" finished-at="2024-03-05T19:12:56 IST" duration-ms="795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserByUserIdWithInvalidTokenAndInvalidId -->
+        <test-method signature="updateUserByUserIdWithInvalidUserId()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:56 IST" name="updateUserByUserIdWithInvalidUserId" finished-at="2024-03-05T19:12:57 IST" duration-ms="812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserByUserIdWithInvalidUserId -->
+        <test-method signature="updateUserWithEmojiInFirstAndLastName()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:57 IST" name="updateUserWithEmojiInFirstAndLastName" finished-at="2024-03-05T19:12:59 IST" duration-ms="1858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserWithEmojiInFirstAndLastName -->
+        <test-method signature="updateUserWithOnlyRequiredField()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:12:59 IST" name="updateUserWithOnlyRequiredField" finished-at="2024-03-05T19:13:01 IST" duration-ms="2027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserWithOnlyRequiredField -->
+        <test-method signature="uploadReference_Obj()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:13:01 IST" name="uploadReference_Obj" finished-at="2024-03-05T19:13:05 IST" duration-ms="3845" status="FAIL">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["data"] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["data"] not found.
+at org.json.JSONObject.get(JSONObject.java:595)
+at org.json.JSONObject.getJSONObject(JSONObject.java:805)
+at com.example.testclasses.UserClass.uploadReference_Obj(UserClass.java:583)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadReference_Obj -->
+        <test-method signature="uploadReference_ObjWithInvalidToken()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:13:05 IST" name="uploadReference_ObjWithInvalidToken" finished-at="2024-03-05T19:13:08 IST" duration-ms="3214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadReference_ObjWithInvalidToken -->
+        <test-method is-config="true" signature="afterAllClass()[pri:0, instance:com.example.testclasses.UserClass@4d5650ae]" started-at="2024-03-05T19:13:08 IST" name="afterAllClass" finished-at="2024-03-05T19:13:08 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAllClass -->
+      </class> <!-- com.example.testclasses.UserClass -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

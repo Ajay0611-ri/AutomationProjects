@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Api-E2E-Demo/Api-E2E-Demo/Api-E2E-Demo.iml" filepath="$PROJECT_DIR$/Api-E2E-Demo/Api-E2E-Demo/Api-E2E-Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebTesting/AppAutomationDemo.iml" filepath="$PROJECT_DIR$/WebTesting/AppAutomationDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AutomationProjects.iml" filepath="$PROJECT_DIR$/.idea/AutomationProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UI-E2E-Testing/UI-E2E-Testing.iml" filepath="$PROJECT_DIR$/UI-E2E-Testing/UI-E2E-Testing.iml" />
+    </modules>
+  </component>
+</project>
